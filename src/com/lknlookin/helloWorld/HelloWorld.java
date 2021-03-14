@@ -3,25 +3,24 @@ package com.lknlookin.helloWorld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		// single line comment
+		bark();
 		
-		/*
-		 * multiple line comment
-		 * multiple line comment
-		 * multiple line comment
-		 */
+		float f = 1.23f;
+		int i = 10;
+		double d = 6.6;
+		char c = 'c';
 		
-		int a = 10;
-		boolean boo = true;
-		String name = "lknlookin";
-		int[] arr = {0,1,2,3,4};
-		float f = 10f;
+		System.out.println((int) f);
+		System.out.println((float) i);
+		System.out.println((float) d);
+		System.out.println((int) c);
 		
-		System.out.println("This is a int " + a);
-		System.out.println("This is a boolean " + boo);
-		System.out.println("This is a name " + name);
-		System.out.println("This is a int array " + arr);
-		System.out.println("This is a float " + f);
-		
+		final String hello = "Hello";
+		hello = "World";
+	}
+	
+	public static void bark() {
+		String dogName = "Dugdig";
+		System.out.println("The Dog name = " + dogName + " bark");
 	}
 }
