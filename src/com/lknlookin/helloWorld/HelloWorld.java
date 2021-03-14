@@ -3,24 +3,28 @@ package com.lknlookin.helloWorld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		bark();
+		int i = 20;
 		
-		float f = 1.23f;
-		int i = 10;
-		double d = 6.6;
-		char c = 'c';
+		i++;
+		i++;
+		i++;
+		i++;
+		i++;
+		System.out.println(i);
 		
-		System.out.println((int) f);
-		System.out.println((float) i);
-		System.out.println((float) d);
-		System.out.println((int) c);
+		--i;
+		--i;
+		--i;
+		--i;
+		--i;
+		System.out.println(i);
 		
-		final String hello = "Hello";
-		hello = "World";
-	}
-	
-	public static void bark() {
-		String dogName = "Dugdig";
-		System.out.println("The Dog name = " + dogName + " bark");
+		float f1 = 1.2f;
+		float f2 = 3.4f;
+		System.out.println((f1 == 1.2f) && (f2 != 2.3f));
+		
+		char a = 'a';
+		char b = 'b';
+		System.out.println((a == 'c') || (b == 'b'));
 	}
 }
