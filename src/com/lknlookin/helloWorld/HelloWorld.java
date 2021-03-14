@@ -4,14 +4,28 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		int score = 66;
-		boolean isHandSome = true;
+		String grade = "";
 		
-		if(score >= 80 || isHandSome) {
-			System.out.println("Good");
-		}else if(score >= 50) {
-			System.out.println("normal");
-		}else {
-			System.out.println("fail");
+		switch(score) {
+			case 80: 
+				grade = "A";
+				break;
+			case 70: 
+				grade = "B";
+				break;
+			case 60: 
+				grade = "C";
+				break;
+			case 50: 
+				grade = "D";
+				break;
+			case 40: 
+				grade = "F";
+				break;
+			default:
+				grade = "E";
 		}
+		
+		System.out.println(grade);
 	}
 }
