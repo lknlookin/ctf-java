@@ -3,36 +3,20 @@ package com.lknlookin.helloWorld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		String String1 = "You and Me";
-		String String2 = " you and me ";
-		
 		//1
-		System.out.println(String1.equals(String2));
+		int[][] arr2d = {{1,2,3,4},{5,6,7,8}};
+		for (int i = 0; i < arr2d.length; i++) {
+			for (int j = 0; j < arr2d[i].length; j++) {
+				System.out.println(arr2d[i][j]);
+			}
+		}
 		
 		//2
-		String you = "you";
-		System.out.println(String1.contains(you)? you : "Not found "+ you +" in "+String1);
-		System.out.println(String2.contains(you)? you : "Not found "+ you +" in "+String2);
-		
-		//3
-		System.out.println(String1.length());
-		System.out.println(String2.length());
-		
-		//4
-		System.out.println(String1.substring(1,4));
-		System.out.println(String2.substring(1,4));
-		
-		//5
-		System.out.println(String1.trim());
-		System.out.println(String2.trim());
-		
-		//6
-		System.out.println(String1.toUpperCase());
-		System.out.println(String2.toUpperCase());
-		
-		//7
-		System.out.println(String2.toUpperCase().trim());
-		
+		int sum=0;
+		for (int i = 0; i < arr2d.length; i++) {
+			sum += arr2d[i][arr2d[i].length-1];
+		}
+		System.out.println(sum);
 	}
 	
 }
