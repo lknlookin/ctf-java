@@ -7,6 +7,11 @@ public class Employee {
 	public int salary;
 	public String position;
 	
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.checkPosition();
+	}
+	
 	public Employee(String firstnameInput, String lastnameInput, int salaryInput, String positionInput) {
 		this.firstname = firstnameInput;
 		this.lastname = lastnameInput;
