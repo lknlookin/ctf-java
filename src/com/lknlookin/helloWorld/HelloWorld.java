@@ -3,20 +3,31 @@ package com.lknlookin.helloWorld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		//1
-		int[][] arr2d = {{1,2,3,4},{5,6,7,8}};
-		for (int i = 0; i < arr2d.length; i++) {
-			for (int j = 0; j < arr2d[i].length; j++) {
-				System.out.println(arr2d[i][j]);
-			}
-		}
 		
-		//2
-		int sum=0;
-		for (int i = 0; i < arr2d.length; i++) {
-			sum += arr2d[i][arr2d[i].length-1];
-		}
-		System.out.println(sum);
+		SamsungGalaxyNote8 ssNote8 = new SamsungGalaxyNote8();
+		iPhoneX ipX = new iPhoneX();
+		iPhone8 ip8 = new iPhone8();
+		SamsungGalaxyS8 ssS8 = new SamsungGalaxyS8();
+		
+		ssNote8.model = "Samsung Galaxy Note 8";
+		ssNote8.useGearVR();
+		ssNote8.transformToPC();
+		ssNote8.usePen();
+		ssNote8.googlePlay();
+		
+		ipX.model = "iPhoneX";
+		ipX.faceID();
+		ipX.appStore();
+		
+		ip8.model = "iPhone8";
+		ip8.touchID();
+		ip8.appStore();
+		
+		ssS8.model = "Samsung Galaxy S8";
+		ssS8.useGearVR();
+		ssS8.transformToPC();
+		ssS8.googlePlay();
+		
 	}
 	
 }
