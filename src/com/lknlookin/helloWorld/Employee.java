@@ -8,14 +8,18 @@ public class Employee {
 	public String position;
 	
 	public Employee(String firstnameInput, String lastnameInput, int salaryInput, String positionInput) {
-		firstname = firstnameInput;
-		lastname = lastnameInput;
-		salary = salaryInput;
-		position = positionInput;
+		this.firstname = firstnameInput;
+		this.lastname = lastnameInput;
+		this.salary = salaryInput;
+		this.position = positionInput;
+	}
+	
+	public Employee() {
+		this("noname", "homeless", 0, "ghost");
 	}
 	
 	public void hello() {
-		System.out.println("Hello " + firstname);
+		System.out.println("Hello " + this.firstname);
 	}
 	
 	public int getSalary() {
@@ -23,7 +27,11 @@ public class Employee {
 	}
 	
 	public void checkPosition() {
-		System.out.println("Position :" + position);
+		System.out.println("Position: " + this.position);
 	}
 	
+	@Override
+	public String toString() {
+		return "Firstname: " + this.firstname + " Lastname: " + this.lastname;
+	}
 }
