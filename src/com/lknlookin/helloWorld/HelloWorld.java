@@ -3,12 +3,15 @@ package com.lknlookin.helloWorld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		Employee[] emp = new Employee[5];
 		
-		for (int i = 0; i < emp.length; i++) {
-			emp[i] = new Employee("firstname"+i, "lastname"+i, i*10000, "Staff");
-		}
-		
+		Human a = new Human("A", 10);
+		a.move();
+		a.eat();
+		a.stand();
+		System.out.println(a.getStatus());
+		System.out.println(a.getAge());
+		a.die();
+		System.out.println(a.getStatus());
 	}
 	
 }
