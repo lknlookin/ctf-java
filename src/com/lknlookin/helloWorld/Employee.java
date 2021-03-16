@@ -19,6 +19,10 @@ public class Employee {
 		this.position = positionInput;
 	}
 	
+	public Employee(String firstnameInput, String lastnameInput, int salaryInput) {
+		this(firstnameInput, lastnameInput, salaryInput, "");
+	}
+	
 	public Employee() {
 		this("noname", "homeless", 0, "ghost");
 	}
